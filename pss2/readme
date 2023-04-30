@@ -1,2 +1,2 @@
 Implementacja stronicowania rezultatów w plikach ProduktyCtrl.class.php oraz produkty.tpl.
-Implementacja AJAX'a - dodanie nowego widoku Lista.tpl, dodanie nowego skryptu lista.js, dodanie nowego kontrolera ListaCtrl.class.php
+Implementacja AJAX'a - dodanie nowego widoku Lista.tpl, dodanie nowego skryptu lista.js, dodanie nowego kontrolera ListaCtrl.class.php, dodanie nowej ścieżki w routing.php
