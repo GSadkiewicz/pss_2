@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-04-30 15:10:06
-  from 'D:\xampp\htdocs\project2\app\views\Produkty.tpl' */
+/* Smarty version 4.1.0, created on 2023-04-30 15:03:40
+  from 'D:\xampp\htdocs\project2\app\views\produkty.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_644e68ae2218b7_64604489',
+  'unifunc' => 'content_644e672c673df7_65211506',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ca36b403bd139e0f54350793671b40e7ad77f749' => 
+    'fa7c3064dac43eff134935a64762fa8306d26916' => 
     array (
-      0 => 'D:\\xampp\\htdocs\\project2\\app\\views\\Produkty.tpl',
-      1 => 1682860163,
+      0 => 'D:\\xampp\\htdocs\\project2\\app\\views\\produkty.tpl',
+      1 => 1682859741,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_644e68ae2218b7_64604489 (Smarty_Internal_Template $_smarty_tpl) {
+function content_644e672c673df7_65211506 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_708140580644e68ae20f293_40091836', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1203858710644e672c662e62_38898742', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'content'} */
-class Block_708140580644e68ae20f293_40091836 extends Smarty_Internal_Block
+class Block_1203858710644e672c662e62_38898742 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_708140580644e68ae20f293_40091836',
+    0 => 'Block_1203858710644e672c662e62_38898742',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-    <div id="glowny">
+
     <div id="produkty" class="produkty">
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['items']->value, 'item');
@@ -90,7 +90,6 @@ produkty_lista', <?php echo $_smarty_tpl->tpl_vars['category_id']->value;?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /js/lista.js"><?php echo '</script'; ?>
 >
-    </div>
 <?php
 }
 }

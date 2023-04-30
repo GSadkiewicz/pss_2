@@ -1,7 +1,7 @@
 {extends file="main.tpl"}
 {block name=content}
-
-    <div class="produkty">
+    <div id="glowny">
+    <div id="produkty" class="produkty">
         {foreach $items as $item}
         
             <a class="item_tile" href="{$conf->app_root}/produkt/{$item["Item_id"]}">
@@ -15,13 +15,16 @@
             <p>Strona {$strona} z {$liczba_stron}</p>
             <div class="paginacja_przyciski">
             {if $strona > 1}
-                <a href="{$conf->app_root}/produkty/{$category_id}?strona={$poprzednia_strona}">&#60;Poprzednia strona</a>
+                <input type="button"  value="Poprzednia strona" onclick="ajax('{$conf->action_root}produkty_lista', {$category_id}, {$poprzednia_strona}); return false;"/>
+
             {/if}
             {if $strona < $liczba_stron}
-                <a href="{$conf->app_root}/produkty/{$category_id}?strona={$nastepna_strona}">Nastepna strona &#62;</a>
+                <input type="button" value="Nastepna strona" onclick="ajax('{$conf->action_root}produkty_lista', {$category_id}, {$nastepna_strona}); return false;"/>
+
             {/if}
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="{$conf->app_url}/js/lista.js"></script>
+    </div>
 {/block}
